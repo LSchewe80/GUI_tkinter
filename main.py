@@ -1,12 +1,9 @@
-from tkinter_class import *
+##from tkinter_class import *
+from calc_Class import *
 
 #Main-Programm
 if __name__ == '__main__':
     root = Tk()
-
-    #Objekt erzeugen
-    app = Window(master=root)
-
-    #mainloop
-    app.mainloop()
-    root.destroy()
+    my_gui = Calculator(root)
+    root.mainloop()
+ 
